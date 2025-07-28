@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1.0, user-scalable=yes">
+    <meta name="description" content="VICSTA - Vishwakarma IOT Cyber Security Tech Association. Leading innovation in cybersecurity and IoT at Vishwakarma Institute of Technology. Join our tech community for workshops, competitions, and career development.">
+    <meta name="keywords" content="VICSTA, Cyber Security, IoT, Technology, College Club, Vishwakarma, VIT Pune, Tech Association, Cybersecurity Training, IoT Innovation, Student Tech Community">
+    <meta name="author" content="VICSTA">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#667eea">
+    
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="VICSTA - Vishwakarma IOT Cyber Security Tech Association">
+    <meta property="og:description" content="Leading innovation in cybersecurity and IoT at Vishwakarma Institute of Technology. Join our tech community!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/VICSTA_logo_with_name.png">
+    <meta property="og:url" content="https://vicsta.edu">
+    <meta property="og:site_name" content="VICSTA">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="VICSTA - Vishwakarma IOT Cyber Security Tech Association">
+    <meta name="twitter:description" content="Leading innovation in cybersecurity and IoT at VIT Pune">
+    <meta name="twitter:image" content="./assets/VICSTA_logo_with_name.png">
+    
+    <title>VICSTA - Vishwakarma IOT Cyber Security Tech Association | VIT Pune</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/VICSTA_logo_with_name.png">
+    <link rel="apple-touch-icon" href="./assets/VICSTA_logo_with_name.png">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "VICSTA - Vishwakarma IOT Cyber Security Tech Association",
+        "description": "Leading innovation in cybersecurity and IoT at Vishwakarma Institute of Technology",
+        "url": "https://vicsta.edu",
+        "logo": "./assets/VICSTA_logo_with_name.png",
+        "sameAs": [
+            "https://www.instagram.com/vicsta_viitpune",
+            "https://www.linkedin.com/company/vicsta/"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-98765-43210",
+            "contactType": "General Inquiry",
+            "email": "vicsta@vit.edu"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Pune",
+            "addressCountry": "India"
+        }
+    }
+    </script>
+
+    <style>
+        body {
+            background-color: #f8fafc; /* Clean light background */
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #334155; /* Professional dark text */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #052761; /* Updated navbar color */
+            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.15);
+            padding: 12px 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-logo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .hero-logo-img {
+            max-height: 140px;
+            object-fit: contain;
+            filter: drop-shadow(0 4px 8px rgba(59, 130, 246, 0.3));
+        }
+
+        .hero-logo .vit-logo {
+            height: 120px;
+            object-fit: contain;
+            filter: drop-shadow(0 4px 8px rgba(59, 130, 246, 0.2));
+        }
+
+        .logo-img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 4px rgba(59, 130, 246, 0.3));
+        }
+
+        .vit-logo {
+            height: 60px;
+            object-fit: contain;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            font-size: 16px;
+            padding: 8px 0;
+        }
+
+        .nav-link:hover {
+            color: #e0f2fe;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: white;
+            transition: width 0.3s ease;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #3b82f6;
+            border: 2px solid #3b82f6;
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-secondary:hover {
+            background: #3b82f6;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%233b82f6" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero-logo-text {
+            color: #1e40af;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 0 2px 10px rgba(59, 130, 246, 0.2);
+        }
+
+        .hero-description {
+            color: #475569;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons a {
+            margin: 0 10px;
+        }
+
+        .hero-social {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 900px;
+            box-shadow: 0 8px 30px rgba(59, 130, 246, 0.1);
+            border: 1px solid #e2e8f0;
+        }
+
+        .social-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .social-main-title {
+            color: #1e40af;
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .social-main-description {
+            color: #64748b;
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .social-networks {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .social-group {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .social-group-header {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .social-group-title {
+            color: #1e40af;
+            font-size: 1.2rem;
+            margin: 8px 0 5px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .social-group-subtitle {
+            color: #64748b;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .social-links-horizontal {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .social-link-item {
+            background: white;
+            color: #475569;
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .social-link-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+            border-color: #3b82f6;
+        }
+
+        .social-link-item.facebook:hover { border-color: #1877f2; color: #1877f2; }
+        .social-link-item.instagram:hover { border-color: #e4405f; color: #e4405f; }
+        .social-link-item.linkedin:hover { border-color: #0077b5; color: #0077b5; }
+        .social-link-item.twitter:hover { border-color: #1da1f2; color: #1da1f2; }
+
+        /* Additional styles for the rest of the page */
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #1e40af;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #64748b;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            text-align: left;
+            margin-bottom: 50px;
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+        }
+
+        .about-left {
+            flex: 1;
+            min-width: 300px;
+            padding-right: 30px;
+        }
+
+        .about-right {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .about-section {
+            margin-bottom: 25px;
+        }
+
+        .about-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #1e40af;
+            font-weight: 600;
+        }
+
+        .about-section p {
+            line-height: 1.7;
+            font-size: 1rem;
+            color: #475569;
+        }
+
+        .hod-message {
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            max-width: 100%;
+            margin-top: 30px;
+        }
+
+        .hod-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hod-photo {
+            margin-bottom: 20px;
+        }
+
+        .hod-photo img {
+            border: 4px solid #3b82f6;
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.2);
+        }
+
+        .hod-text {
+            flex: 1;
+            margin-top: 15px;
+        }
+
+        .hod-quote {
+            font-size: 1rem;
+            line-height: 1.7;
+            text-align: justify;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-left: 4px solid #3b82f6;
+            color: #334155;
+            border-radius: 8px;
+            overflow: hidden;
+            white-space: normal;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);
+        }
+
+        .hod-attribution {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .hod-attribution h4 {
+            color: #1e40af;
+            margin-bottom: 5px;
+        }
+
+        .hod-attribution p {
+            color: #64748b;
+        }
+
+        .achievements {
+            background: #f8fafc;
+            padding: 80px 0;
+        }
+
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .achievement-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(59, 130, 246, 0.15);
+            border-color: #3b82f6;
+        }
+
+        .achievement-image {
+            text-align: center;
+            margin-bottom: 20px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8fafc;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        .achievement-img {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .achievement-date {
+            background: #eff6ff;
+            color: #1e40af;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .achievement-title {
+            font-size: 1.3rem;
+            margin: 10px 0 15px 0;
+            color: #1e40af;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .achievement-description {
+            font-size: 0.95rem;
+            color: #475569;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .achievement-tags {
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            display: inline-block;
+        }
+
+        .newsletter-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 50px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .newsletter-card {
+            flex: 1;
+            max-width: 350px;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .newsletter-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+            border-color: #3b82f6;
+        }
+
+        .newsletter-header {
+            margin-bottom: 15px;
+        }
+
+        .newsletter-header i {
+            color: #3b82f6;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .newsletter-header h3 {
+            color: #1e40af;
+            margin: 0;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .newsletter-content p {
+            color: #475569;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .join-us {
+            background: white;
+            padding: 80px 0;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .join-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1e40af;
+            font-weight: 700;
+        }
+
+        .join-description {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: #475569;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .join-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .join-text {
+            border-right: 2px solid #e2e8f0;
+        }
+
+        .join-benefits {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .benefit-item {
+            font-size: 1rem;
+            margin: 12px 0;
+            display: flex;
+            align-items: center;
+            color: #475569;
+        }
+
+        .benefit-item i {
+            color: #3b82f6;
+            margin-right: 12px;
+            font-size: 1.1rem;
+        }
+
+        .join-card {
+            background: #f8fafc;
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+
+        .join-logo {
+            max-width: 150px;
+            margin-bottom: 25px;
+        }
+
+        .membership-feature {
+            font-size: 1rem;
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #475569;
+            font-weight: 500;
+        }
+
+        .membership-feature i {
+            color: #3b82f6;
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+
+        .footer {
+            background: #1e293b;
+            padding: 60px 0 30px;
+            color: #e2e8f0;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-logo {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo-img {
+            max-width: 150px;
+            filter: brightness(1.1);
+        }
+
+        .footer-description {
+            font-size: 1rem;
+            margin-bottom: 25px;
+            line-height: 1.6;
+            color: #cbd5e1;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-social-link {
+            color: #cbd5e1;
+            font-size: 1.4rem;
+            transition: all 0.3s ease;
+            padding: 8px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-social-link:hover {
+            color: #3b82f6;
+            background: rgba(59, 130, 246, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .footer-section {
+            margin-bottom: 20px;
+        }
+
+        .footer-section h4 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #3b82f6;
+            font-weight: 600;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin: 8px 0;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            color: #3b82f6;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #334155;
+        }
+
+        .footer-copyright {
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .footer-copyright i {
+            color: #ef4444;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+            }
+            
+            .footer-logo {
+                text-align: center;
+            }
+            
+            .hero-logo {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .hero-logo-text {
+                font-size: 2rem;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .about-left {
+                padding-right: 0;
+                margin-bottom: 30px;
+            }
+            
+            .join-content {
+                flex-direction: column !important;
+            }
+            
+            .join-text {
+                border-right: none;
+                border-bottom: 2px solid #e2e8f0;
+                padding-right: 0;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+            }
+            
+            .social-networks {
+                gap: 20px;
+            }
+            
+            .achievements-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="./assets/VICSTA_logo_with_name.png" alt="VICSTA Logo" class="logo-img">
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#achievements" class="nav-link">Achievements</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#join" class="nav-link">Join Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="vicsta-gallery.html" class="nav-link">Activities</a>
+                </li>
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="cyber-grid"></div>
+            <div class="floating-elements">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="./assets/Screenshot 2025-07-25 195424.png" alt="VIT Pune Logo" class="hero-logo-img vit-logo">
+                <img src="./assets/VICSTA_logo_with_name.png" alt="VICSTA Logo" class="hero-logo-img">
+            </div>
+            <h1 class="hero-logo-text">Vishwakarma IOT Cybersecurity Tech Association</h1>
+            <p class="hero-description">
+                Pioneering the future of cybersecurity and IoT innovation at Vishwakarma Institute of Technology
+            </p>
+
+            <div class="hero-social">
+                <div class="social-header">
+                    <h3 class="social-main-title">
+                        <i class="fas fa-network-wired"></i>
+                        Connect & Collaborate
+                    </h3>
+                    <p class="social-main-description">Join our academic and professional communities</p>
+                </div>
+
+                <div class="social-networks">
+                    <div class="social-group academic">
+                        <div class="social-group-header">
+                            <i class="fas fa-university"></i>
+                            <h4 class="social-group-title">Department of Computer Science & IoT</h4>
+                            <p class="social-group-subtitle">Official academic channels & updates</p>
+                        </div>
+                        <div class="social-links-horizontal">
+                            <a href="https://www.facebook.com/profile.php?id=61578052564254" target="_blank" class="social-link-item facebook">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="https://www.instagram.com/cseiotcsbtvitpune/" target="_blank" class="social-link-item instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/department-of-cse-iotcsbt-31a81a373/" target="_blank" class="social-link-item linkedin">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://x.com/cseicbtvitpune" target="_blank" class="social-link-item twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="social-group club">
+                        <div class="social-group-header">
+                            <i class="fas fa-users-cog"></i>
+                            <h4 class="social-group-title">VICSTA Tech Association</h4>
+                            <p class="social-group-subtitle">Student community & innovation hub</p>
+                        </div>
+                        <div class="social-links-horizontal">
+                            <a href="https://www.instagram.com/vicsta_viitpune?igsh=MWw1b25oMTlyYWxj" target="_blank" class="social-link-item instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://www.linkedin.com/company/vicsta/" target="_blank" class="social-link-item linkedin">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-buttons">
+                <a href="#join" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Join Our Community
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    <i class="fas fa-info-circle"></i>
+                    Learn More
+                </a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About VICSTA</h2>
+                <p class="section-subtitle">Empowering the next generation of tech innovators</p>
+            </div>
+
+            <div class="about-content" style="display: flex; flex-wrap: wrap; gap: 20px; max-width: 1200px; margin: 0 auto;">
+                <!-- Left Column -->
+                <div class="about-left" style="flex: 1; min-width: 300px;">
+                    <div class="about-section" style="margin-bottom: 20px;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Who We Are</h3>
+                        <p style="line-height: 1.6; font-size: 1rem;">
+                            VICSTA (Vishwakarma IOT Cyber Security Tech Association) is a premier technology club at 
+                            Vishwakarma Institute of Technology. We are dedicated to fostering innovation, learning, 
+                            and collaboration in the fields of Internet of Things (IoT) and Cybersecurity.
+                        </p>
+                    </div>
+                    <div class="about-section">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Our Mission</h3>
+                        <p style="line-height: 1.6; font-size: 1rem;">
+                            To create a vibrant ecosystem where students can explore cutting-edge technologies, 
+                            develop practical skills, and contribute to solving real-world problems through 
+                            innovative IoT and cybersecurity solutions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="about-right" style="flex: 1; min-width: 300px; text-align: center;">
+                    <div class="hod-photo" style="margin-bottom: 20px;">
+                        <img src="./assets/hod-photo.jpg" alt="Head of Department" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+                    </div>
+                    <blockquote class="hod-quote" id="hodQuote" style="line-height: 1.6; font-size: 1rem; padding: 20px; border: 1px solid #ccc; border-radius: 10px; margin-bottom: 20px;">
+                        <!-- The text will be dynamically added here -->
+                    </blockquote>
+                    <div class="hod-attribution">
+                        <h4 style="font-size: 1.2rem; margin: 0;">Head of Department</h4>
+                        <p style="font-size: 1rem; color: #666;">Computer Science & IoT Department</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Achievements</h2>
+                <p class="section-subtitle">Real accomplishments by our VICSTA members</p>
+            </div>
+            
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-image">
+                        <img src="./assets/anish-france.png" alt="Anish France Internship Certificate" class="achievement-img">
+                    </div>
+                    <div class="achievement-content">
+                        <div class="achievement-date">2024</div>
+                        <h3 class="achievement-title">International Research Internship - France</h3>
+                        <p class="achievement-description">
+                            Anish Nitin Takwale completed University Project Based Internship at Avignon University, France. 
+                            Research on "Analysis and Mitigation Of Black Hole Attack Using Honeypot in IoT Mechanism". 
+                            Received Best Performance Certificate with 'A' Grade in oral defense.
+                        </p>
+                        <div class="achievement-tags">
+                            <span class="tag">International</span>
+                            <span class="tag">Research</span>
+                            <span class="tag">IoT Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-image">
+                        <img src="./assets/Screenshot 2025-07-25 151627.png" alt="APOGEE BITS Pilani Achievement" class="achievement-img">
+                    </div>
+                    <div class="achievement-content">
+                        <div class="achievement-date">2025</div>
+                        <h3 class="achievement-title">APOGEE BITS Pilani, Pilani Campus</h3>
+                        <p class="achievement-description">
+                            Team Meraki Titans secured the Top 5 Position in the “Prototype Presentation Competition, BITS Pilani” where they showcased their AI + IoT Powered Healthcare System for Remote Villages.
+                        </p>
+                        <div class="achievement-tags">
+                            <span class="tag">Top 5 Position</span>
+                            <span class="tag">AI + IoT</span>
+                            <span class="tag">Healthcare Innovation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-image">
+                        <img src="./assets/gian-innovation.png" alt="GIAN Grassroots Innovation Certificate" class="achievement-img">
+                    </div>
+                    <div class="achievement-content">
+                        <div class="achievement-date">2024</div>
+                        <h3 class="achievement-title">GIAN Grassroots Innovation IIM Ahmedabad</h3>
+                        <p class="achievement-description">
+                            Secured National finalist position in "GIAN Grassroots Innovation" out of 250+ teams held under Amaethon, The Food and Agribusiness Summit at IIM Ahmedabad on December 21-22, 2024.
+                        </p>
+                        <div class="achievement-tags">
+                            <span class="tag">National Finalist</span>
+                            <span class="tag">Innovation</span>
+                            <span class="tag">IIM Ahmedabad</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-image">
+                        <img src="./assets/design-athon-iiit.png" alt="Design-athon IIIT Nagpur Certificate" class="achievement-img">
+                    </div>
+                    <div class="achievement-content">
+                        <div class="achievement-date">2024</div>
+                        <h3 class="achievement-title">Design-athon IIIT Nagpur</h3>
+                        <p class="achievement-description">
+                            Selected as one of the top 10 national finalists from over 300 teams for the offline round of a 12-hour design competition held at the IIITN campus.
+                        </p>
+                        <div class="achievement-tags">
+                            <span class="tag">Top 10 Finalist</span>
+                            <span class="tag">Design Competition</span>
+                            <span class="tag">IIIT Nagpur</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-image">
+                        <img src="./assets/vishwactf-mini.png" alt="VishwaCTF'25 Mini Achievement" class="achievement-img">
+                    </div>
+                    <div class="achievement-content">
+                        <div class="achievement-date">2025</div>
+                        <h3 class="achievement-title">VishwaCTF'25 Mini</h3>
+                        <p class="achievement-description">
+                            Our team achieved a top rank in VishwaCTF Mini, a 24-hour cybersecurity challenge, competing against 200+ teams and demonstrating our exceptional skills in cybersecurity and digital forensics.
+                        </p>
+                        <div class="achievement-tags">
+                            <span class="tag">Top Rank</span>
+                            <span class="tag">Cybersecurity</span>
+                            <span class="tag">CTF</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-image">
+                        <img src="./assets/cyber-for-her-hackathon.png" alt="Cyber For Her Hackathon Certificate" class="achievement-img">
+                    </div>
+                    <div class="achievement-content">
+                        <div class="achievement-date">2025</div>
+                        <h3 class="achievement-title">Cyber For Her Hackathon - National Finalist</h3>
+                        <p class="achievement-description">
+                            Selected for the grand finale of this prestigious cybersecurity hackathon by DSCI, sponsored by Rubrik. The competition included poster and video creation for cybersecurity awareness in Phase 1 and an ethical hacking round in Phase 2. The finale was held at SCOPE Convention Centre, New Delhi.
+                        </p>
+                        <div class="achievement-tags">
+                            <span class="tag">National Finalist</span>
+                            <span class="tag">Cybersecurity</span>
+                            <span class="tag">DSCI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="newsletter-section">
+                <div class="newsletter-card">
+                    <div class="newsletter-header">
+                        <i class="fas fa-file-pdf"></i>
+                        <h3>IOTVishwa Newsletter</h3>
+                    </div>
+                    <div class="newsletter-content">
+                        <p>Read about our members' achievements and contributions in the official IOTVishwa Newsletter</p>
+                        <a href="./assets/IOTVishwa_Newsletter.pdf" target="_blank" class="btn btn-secondary">
+                            <i class="fas fa-download"></i>
+                            Download Newsletter
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="newsletter-card">
+                    <div class="newsletter-header">
+                        <i class="fas fa-trophy"></i>
+                        <h3>VICSTA Achievements</h3>
+                    </div>
+                    <div class="newsletter-content">
+                        <p>Comprehensive document showcasing VICSTA members' achievements and accomplishments</p>
+                        <a href="./assets/Achievements_CSEIOTCSBT.pdf" target="_blank" class="btn btn-secondary">
+                            <i class="fas fa-download"></i>
+                            Download Achievements
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="join" class="join-us">
+        <div class="container">
+            <div class="join-content" style="display: flex; gap: 20px;">
+                <div class="join-text" style="flex: 1; border-right: 2px solid #ccc; padding-right: 20px;">
+                    <h2 class="join-title">Ready to Join VICSTA?</h2>
+                    <p class="join-description">
+                        Become part of an innovative community that's shaping the future of technology. 
+                        Whether you're a beginner or an expert, there's a place for you in VICSTA.
+                    </p>
+                    
+                    <div class="join-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Access to exclusive workshops and training</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Networking with industry professionals</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Hands-on project experience</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Certification and skill development</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Internship and job opportunities</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="join-visual" style="flex: 1; padding-left: 20px;">
+                    <div class="join-card">
+                        <div class="join-card-header">
+                            <img src="./assets/VICSTA_logo_with_name.png" alt="VICSTA Logo" class="join-logo">
+                        </div>
+                        <div class="join-card-body">
+                            <div class="membership-feature">
+                                <i class="fas fa-infinity"></i>
+                                <span>Lifetime Access</span>
+                            </div>
+                            <div class="membership-feature">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Learn & Grow</span>
+                            </div>
+                            <div class="membership-feature">
+                                <i class="fas fa-network-wired"></i>
+                                <span>Network</span>
+                            </div>
+                            <div class="membership-feature">
+                                <i class="fas fa-rocket"></i>
+                                <span>Innovate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="./assets/VICSTA_logo_with_name.png" alt="VICSTA Logo" class="footer-logo-img">
+                    </div>
+                    <p class="footer-description">
+                        Vishwakarma IOT Cyber Security Tech Association - Pioneering innovation 
+                        in cybersecurity and IoT at Vishwakarma Institute of Technology.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/vicsta_viitpune?igsh=MWw1b25oMTlyYWxj" target="_blank" class="footer-social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/vicsta/" target="_blank" class="footer-social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                        <li><a href="#join">Join Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Focus Areas</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Cybersecurity</a></li>
+                        <li><a href="#">Internet of Things</a></li>
+                        <li><a href="#">Blockchain</a></li>
+                        <li><a href="#">Artificial Intelligence</a></li>
+                        <li><a href="#">Machine Learning</a></li>
+                        <li><a href="#">Ethical Hacking</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 VICSTA. All rights reserved. | Designed with <i class="fas fa-heart"></i> by VICSTA Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const quoteElement = document.getElementById("hodQuote");
+            const quoteText = "We firmly believe that our engineers will become valuable assets—not just to our institution and the organizations they join, but also to the nation. In addition to strong academic foundations, we equip our students with the skills needed to face real-world challenges through various value-added courses that boost their career prospects. Our state-of-the-art infrastructure, dedicated and experienced faculty, and strong emphasis on quality education foster meaningful interaction among students, parents, and staff. Furthermore, our proactive Training & Placement Cell plays a key role in securing a promising future for our students.";
+            let charIndex = 0;
+
+            function typeChar() {
+                if (charIndex < quoteText.length) {
+                    quoteElement.innerHTML += quoteText.charAt(charIndex);
+                    charIndex++;
+                    setTimeout(typeChar, 50); // Adjust typing speed (50ms per character)
+                }
+            }
+
+            typeChar();
+        });
+    </script>
+</body>
+</html>
